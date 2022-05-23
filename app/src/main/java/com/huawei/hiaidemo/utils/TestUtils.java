@@ -11,7 +11,7 @@ public class TestUtils {
     /**
      * Retrieve a bitmap from assets.
      *
-     * @param mgr  The {@link AssetManager} obtained via {@link Context#getAssets()}
+     * @param mgr  The {@link AssetManager} obtained via {@link android.content.Context#getAssets()}
      * @param path The path to the asset.
      * @return The {@link Bitmap} or {@code null} if we failed to decode the file.
      */

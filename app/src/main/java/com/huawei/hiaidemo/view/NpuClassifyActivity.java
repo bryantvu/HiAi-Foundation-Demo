@@ -22,12 +22,6 @@ import android.media.ThumbnailUtils;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -60,8 +54,15 @@ import java.util.Vector;
 import static com.huawei.hiaidemo.utils.Constant.GALLERY_REQUEST_CODE;
 import static com.huawei.hiaidemo.utils.Constant.IMAGE_CAPTURE_REQUEST_CODE;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-public abstract class NpuClassifyActivity extends AppCompatActivity{
+
+public abstract class NpuClassifyActivity extends AppCompatActivity {
     private static final String TAG = NpuClassifyActivity.class.getSimpleName();
     protected List<ClassifyItemModel> items;
 
